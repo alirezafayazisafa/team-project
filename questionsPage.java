@@ -12,6 +12,7 @@ public class questionsPage {
 
         // Question 1
         JLabel question1 = new JLabel("How attractive do you find the software's user interface?");
+        question1.setFont(customFont);
         question1.setBounds(10, 10, 300, 20);
 
         JRadioButton radio1_1 = new JRadioButton("1");
@@ -34,6 +35,7 @@ public class questionsPage {
 
         // Question 2
         JLabel question2 = new JLabel("Is it easy for you to access the various features of the software?");
+        question2.setFont(customFont);
         question2.setBounds(10, 90, 300, 20);
 
 
@@ -57,6 +59,7 @@ public class questionsPage {
 
         // Question 3
         JLabel question3 = new JLabel("How simple and user-friendly is the software page design?");
+        question3.setFont(customFont);
         question3.setBounds(10, 170, 300, 20);
 
         JRadioButton radio3_1 = new JRadioButton("1");
@@ -79,6 +82,7 @@ public class questionsPage {
 
         // Question 4
         JLabel question4 = new JLabel("Are the colors and fonts used in the software appropriate?");
+        question4.setFont(customFont);
         question4.setBounds(10, 250, 350, 20);
 
         JRadioButton radio4_1 = new JRadioButton("1");
@@ -101,6 +105,7 @@ public class questionsPage {
 
         // Next button to go to Page3
         JButton nextButton = new JButton("Next page");
+        nextButton.setFont(customFont);
         nextButton.setBounds(10, 320, 100, 20);
         nextButton.addActionListener(e -> {
             frame.remove(panel);

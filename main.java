@@ -8,8 +8,12 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Font customFont = new Font("Serif", Font.PLAIN, 14);
+
+
         // Create and configure the main frame
         JFrame frame = new JFrame("Survey form");
+        frame.setFont(customFont);
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -22,10 +26,12 @@ public class Main {
 
         // Create title label
         JLabel title = new JLabel("Survey form");
+        title.setFont(customFont);
         title.setBounds(10, 10, 100, 20);
 
         // Create start button
         JButton startButton = new JButton("Start!");
+        startButton.setFont(customFont);
         startButton.setBounds(10, 40, 100, 20);
 
         // Add components to the panel

@@ -30,15 +30,20 @@ public class informationPage {
 
         // Software Familiarity Level
         JLabel levelLabel = new JLabel("Level of familiarity with similar software");
+        levelLabel.setFont(customFont);
         levelLabel.setBounds(10, 130, 250, 20);
 
         JRadioButton level1 = new JRadioButton("Beginner");
+        level1.setFont(customFont);
         level1.setBounds(10, 160, 100, 20);
         JRadioButton level2 = new JRadioButton("Medium");
+        level2.setFont(customFont);
         level2.setBounds(100, 160, 100, 20);
         JRadioButton level3 = new JRadioButton("Advanced");
+        level3.setFont(customFont);
         level3.setBounds(190, 160, 100, 20);
         JRadioButton level4 = new JRadioButton("Without acquaintance");
+        level4.setFont(customFont);
         level4.setBounds(280, 160, 150, 20);
 
         // Group the radio buttons
@@ -50,6 +55,7 @@ public class informationPage {
 
         // Next Page Button
         JButton nextButton = new JButton("Next page");
+        nextButton.setFont(customFont);
         nextButton.setBounds(10, 200, 100, 20);
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
